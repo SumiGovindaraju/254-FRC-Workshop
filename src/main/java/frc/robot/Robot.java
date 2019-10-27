@@ -9,9 +9,15 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
+import frc.robot.loops.Looper;
 import frc.robot.subsystems.Drive;
 
 public class Robot extends TimedRobot {
+	Looper mEnabledLooper = new Looper();
+	Looper mDisabledLooper = new Looper();
+
+	private final SubsystemManager mSubsystemManager = SubsystemManager.getInstance();
+
 	private Drive mDrive;
 	
 	private Joystick mThrottleStick;
@@ -19,25 +25,32 @@ public class Robot extends TimedRobot {
 
 	@Override
 	public void robotInit() {
-		mDrive = new Drive();
+		mDrive = Drive.getInstance();
+		mSubsystemManager.setSubsystems(mDrive);
 
 		mThrottleStick = new Joystick(Constants.kThrottleStickPort);
 		mTurnStick = new Joystick(Constants.kTurnStickPort);
+
+		mSubsystemManager.registerEnabledLoops(mEnabledLooper);
+		mSubsystemManager.registerDisabledLoops(mDisabledLooper);
 	}
 
 	@Override
 	public void autonomousInit() {
-		mDrive.stop();
+		mDisabledLooper.stop();
+		mEnabledLooper.start();
 	}
 
 	@Override
 	public void disabledInit() {
-		mDrive.stop();
+		mEnabledLooper.stop();
+		mDisabledLooper.start();
 	}
 
 	@Override
-	public void testInit() {
-		mDrive.stop();
+	public void teleopInit() {
+		mDisabledLooper.stop();
+		mEnabledLooper.start();
 	}
 
 	@Override

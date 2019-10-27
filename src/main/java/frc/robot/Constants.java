@@ -1,6 +1,8 @@
 package frc.robot;
 
 public class Constants {
+    public static final double kLooperDt = 0.01;
+
     // These are random id's that arbitrarily set
     public static final int kDriveRightMasterId = 0;
     public static final int kDriveRightSlaveId = 1;
