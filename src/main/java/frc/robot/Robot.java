@@ -55,6 +55,6 @@ public class Robot extends TimedRobot {
 
 	@Override
 	public void teleopPeriodic() {
-		mDrive.setOpenLoop(mThrottleStick.getRawAxis(1), mTurnStick.getRawAxis(0));
+		mDrive.setCheesyishDrive(mThrottleStick.getRawAxis(1), -mTurnStick.getRawAxis(0), mTurnStick.getRawButton(1));
 	}
 }
