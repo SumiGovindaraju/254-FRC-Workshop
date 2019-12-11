@@ -3,6 +3,10 @@ package frc.robot;
 public class Constants {
     public static final double kLooperDt = 0.01;
 
+    // CAN
+    public static final int kLongCANTimeoutMs = 100; // use for constructors
+    public static final int kCANTimeoutMs = 10; // use for important on the fly updates
+
     // Drive
     public static final int kDriveRightMasterId = 0;
     public static final int kDriveRightSlaveId = 1;
