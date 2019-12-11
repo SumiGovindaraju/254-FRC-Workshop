@@ -19,4 +19,14 @@ public class Constants {
     // Joysticks
     public static final int kThrottleStickPort = 0;
     public static final int kTurnStickPort = 1;
+
+
+    // Flywheel
+    public static final int kFlywheelMasterId = 4;
+    public static final int kFlywheelSlaveId = 5;
+    public static final double kFlywheelKp = 0.0;
+    public static final double kFlywheelKi = 0.0;
+    public static final double kFlywheelKd = 0.0;
+    public static final double kFlywheelKf = 0.0;
+    public static final double kFlywheelTicksPerRevolution = 0.0; // based on gear reduction between encoder and output shaft, and encoder ppr
 }
