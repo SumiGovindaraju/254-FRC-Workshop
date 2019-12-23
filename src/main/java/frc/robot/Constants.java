@@ -7,6 +7,9 @@ public class Constants {
     public static final int kLongCANTimeoutMs = 100; // use for constructors
     public static final int kCANTimeoutMs = 10; // use for important on the fly updates
 
+    // Pneumatics
+    public static final int kPCMId = 0;
+
     // Drive
     public static final int kDriveRightMasterId = 0;
     public static final int kDriveRightSlaveId = 1;
@@ -29,4 +32,8 @@ public class Constants {
     public static final double kFlywheelKd = 0.0;
     public static final double kFlywheelKf = 0.0;
     public static final double kFlywheelTicksPerRevolution = 0.0; // based on gear reduction between encoder and output shaft, and encoder ppr
+
+    // Gear Grabber
+    public static final int kMotorGearGrabberTalonId = 6;
+    public static final int kMotorGearGrabberSolenoidId = 1;
 }
