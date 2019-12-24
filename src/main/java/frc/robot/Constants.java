@@ -36,4 +36,10 @@ public class Constants {
     // Gear Grabber
     public static final int kMotorGearGrabberTalonId = 6;
     public static final int kMotorGearGrabberSolenoidId = 1;
+
+    // Intake
+    public static final int kIntakeLeftTalonId = 7;
+    public static final int kIntakeRightTalonId = 8;
+    public static final int kIntakeCloseSolenoidId = 2;
+    public static final int kIntakeClampSolenoidId = 3;
 }
