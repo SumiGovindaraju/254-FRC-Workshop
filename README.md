@@ -1,6 +1,4 @@
 # 254-FRC-Workshop
-Solutions to assignments from Team 254's 2019 FRC Programming Workshop Series, developed by Sumi Govindaraju '20
+This repository contains possible solutions to the various assignments and practice projects from the 2019-2020 Team 254 FRC Programming Workshop Series, by Sumi Govindaraju '20.
 
-Workshops:
-* Workshop 1: [Setting up Development Environment & Basics of Git](https://docs.google.com/presentation/d/1T0OTn26EsqnWxQV2FXYCXNR-qB2Qi5wQQhhuMCewvmY/edit?usp=sharing)
-* Workshop 2: [FRC Control System & Interacting with Hardware](https://docs.google.com/presentation/d/17bj6roWliAjScGrwWxZpVOveE4LgIJObDuQl2T9vnIs/edit?usp=sharing)
+All the workshops, assignments, practice projects, and extra resources can be found [here](https://drive.google.com/drive/folders/1tZ6xdn-xzFpcAzW3VB5ttzQwuhUmvPJB?usp=sharing).
